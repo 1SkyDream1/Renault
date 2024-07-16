@@ -1,0 +1,282 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+
+ <head>
+ 	<title>Трейд ин</title>
+ 	<meta charset="UTF-8">
+ 	<meta name="format-detection" content="telephone=no">
+ 	<style>
+ 		body {
+ 			opacity: 0;
+ 		}
+ 	</style>
+ 	<link rel="stylesheet" href="css/style.min.css?_v=20240716115654">
+ 	<link rel="shortcut icon" href="favicon.ico">
+ 	<!-- <meta name="robots" content="noindex, nofollow"> -->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6-beta.50/inputmask.min.js?_v=20240716115654"></script>
+ </head>
+
+ <body>
+ 	<div class="wrapper">
+ 		<header class="header">
+ 			<div class="header__main">
+ 				<div class="header__up up-header">
+ 					<div class="up-header__container">
+ 						<a href="#" class="up-header__logo"><img src="img/logo.svg" alt="Logo"></a>
+ 						<h2 class="up-header__text">Официальный Дилер в СПб</h2>
+ 						<div class="up-header__location">
+ 							<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<path d="M9.24403 0.655273C6.83002 0.658121 4.51569 1.61835 2.80872 3.32531C1.10175 5.03228 0.141529 7.34661 0.138682 9.76062C0.13579 11.7334 0.780179 13.6526 1.973 15.2238C1.973 15.2238 2.22132 15.5508 2.26188 15.598L9.24403 23.8325L16.2295 15.5938C16.2659 15.55 16.5151 15.2238 16.5151 15.2238L16.5159 15.2214C17.7081 13.6508 18.3522 11.7325 18.3494 9.76062C18.3465 7.34661 17.3863 5.03228 15.6793 3.32531C13.9724 1.61835 11.658 0.658121 9.24403 0.655273ZM9.24403 13.0717C8.58917 13.0717 7.94902 12.8775 7.40452 12.5137C6.86002 12.1498 6.43564 11.6327 6.18503 11.0277C5.93443 10.4227 5.86886 9.75695 5.99662 9.11467C6.12437 8.4724 6.43972 7.88242 6.90278 7.41937C7.36583 6.95631 7.9558 6.64097 8.59808 6.51321C9.24036 6.38545 9.9061 6.45102 10.5111 6.70163C11.1161 6.95223 11.6332 7.37661 11.9971 7.92111C12.3609 8.46561 12.5551 9.10576 12.5551 9.76062C12.554 10.6384 12.2048 11.48 11.5841 12.1007C10.9634 12.7214 10.1218 13.0706 9.24403 13.0717Z" fill="#F2C938" />
+ 							</svg>
+ 							<span>
+ 								г. Санкт-Петербург,<br>
+ 								Московское шоссе, 13к8 <br>
+ 								Ежедневно с 09:00 до 21:00 <br>
+ 							</span>
+ 						</div>
+ 						<a href="tel:+78125078" class="up-header__number">
+ 							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<path d="M10.4586 5.16681C12.474 5.16681 13.3336 6.02644 13.3336 8.04181H15.2503C15.2503 4.95119 13.5492 3.25015 10.4586 3.25015V5.16681ZM13.738 10.383C13.5539 10.2157 13.3119 10.1264 13.0632 10.1341C12.8144 10.1418 12.5784 10.2458 12.405 10.4242L10.1117 12.7827C9.55969 12.6773 8.44994 12.3313 7.3076 11.1919C6.16527 10.0486 5.81931 8.93594 5.71677 8.38777L8.07331 6.09352C8.25196 5.92019 8.35615 5.68414 8.36384 5.43535C8.37153 5.18655 8.28212 4.94452 8.11452 4.76048L4.57348 0.866773C4.40581 0.682156 4.17278 0.570173 3.92388 0.554605C3.67497 0.539037 3.4298 0.621112 3.24044 0.783398L1.16085 2.56686C0.995168 2.73314 0.896276 2.95445 0.882937 3.18881C0.868562 3.4284 0.594479 9.10365 4.99515 13.5062C8.83423 17.3444 13.6431 17.6251 14.9676 17.6251C15.1611 17.6251 15.28 17.6194 15.3116 17.6175C15.5459 17.6044 15.7671 17.505 15.9326 17.3386L17.7151 15.2581C17.8775 15.0688 17.9597 14.8237 17.9444 14.5748C17.929 14.3259 17.8172 14.0928 17.6327 13.925L13.738 10.383Z" fill="#FFD645" />
+ 							</svg>
+ 							<span>+7(812) 507-65-86</span>
+ 						</a>
+ 					</div>
+ 				</div>
+ 				<div class="header__menu menu">
+ 					<div class="menu__container">
+ 						<button type="button" class="menu__icon icon-menu"><span></span></button>
+ 						<nav class="menu__body">
+ 							<ul class="menu__list">
+ 								<div data-spollers="991.98" class="menu__item spolles-menu">
+ 									<details class="spolles-menu__item">
+ 										<summary class="spolles-menu__title">КАТАЛОГ</summary>
+ 										<div class="spolles-menu__body">
+ 										</div>
+ 									</details>
+ 								</div>
+ 								<li class="menu__item"><a href="#" class="menu__link">В НАЛИЧИИ</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">АКЦИИ</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">КРЕДИТ</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">TRADE-IN</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">SIMPLY CLEVER</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">RENAULT ЛЕГКО</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">FINANCE</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">TAXI</a></li>
+ 							</ul>
+ 						</nav>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 		</header>
+ 		<main class="page page--trade">
+ 			<div class="marks-menu">
+ 				<div class="marks-menu__container">
+ 					<ul data-da=".spolles-menu__body, 991.98" class="marks-menu__list">
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">LOGAN</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">LOGAN STEPWAY</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">SANDERO</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">SANDERO STEPWAY</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">DUSTER</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">KAPTUR</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">ARKANA</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">DOKKER STEPWAY</a></li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<section class="main">
+ 				<div class="main__container">
+ 					<div class="main__top">
+ 						<h1 data-watch class="main__title">
+ 							Renault в Трейд-ин
+ 						</h1>
+ 						<div class="main__subtitle">
+ 							<p>Автоцентр Renault – <strong>Рено Пулково</strong> предлагает каждому водителю воспользоваться системой обмена автомобилей Рено по системе Трейд-ин.</p>
+ 							<p>Самый простой вариант замены своего старого автомобиля на новое Рено – это система Трейд-ин. Это делается довольно просто, и это выгодно при покупке нового автомобиля. Стоимость вашей старой машины будет вычтена из стоимости нового автомобиля. Наша компания вернет владельцу разницу в цене, если цена сданной машины будет выше приобретенной.</p>
+ 						</div>
+ 					</div>
+ 					<div class="main__body">
+ 						<div class="main__left left-main">
+ 							<h2 class="left-main__title">Renault Logan <br>от 843 000₽</h2>
+ 							<div class="left-main__image-ibg"><picture><source srcset="img/questions/image.webp" type="image/webp"><img src="img/questions/image.png" alt></picture></div>
+ 						</div>
+ 						<div class="main__calculator calculator-main">
+ 							<h2 class="calculator-main__title"></h2>
+ 							<form action="#" class="calculator-main__form">
+ 								<div class="calculator-main__block">
+ 									<label for="calculator_mark" class="calculator-main__label">Марка и модель автомобиля</label>
+ 									<input autocomplete="off" type="text" id="calculator_mark" name="form[]" data-required class="calculator-main__input">
+ 								</div>
+ 								<div class="calculator-main__block">
+ 									<label for="calculator_year" class="calculator-main__label">Год выпуска</label>
+ 									<input autocomplete="off" type="number" id="calculator_year" name="form[]" data-required class="calculator-main__input">
+ 								</div>
+ 								<div class="calculator-main__block">
+ 									<label for="calculator_name" class="calculator-main__label">Ваше имя</label>
+ 									<input autocomplete="off" type="text" id="calculator_name" name="form[]" data-required class="calculator-main__input">
+ 								</div>
+ 								<div class="calculator-main__block">
+ 									<label for="calculator_number" class="calculator-main__label">Ваш номер</label>
+ 									<input data-mask autocomplete="off" type="tel" id="calculator_number" placeholder="+7" name="form[]" data-required class="calculator-main__input">
+ 								</div>
+ 								<button type="submit" class="calculator-main__button">расчитать стоимость</button>
+ 							</form>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</section>
+ 			<div class="main-menu">
+ 				<div class="main-menu__container">
+ 					<div data-spollers="479.98" class="main-menu__spollers">
+ 						<details class="main-menu__spollers-item">
+ 							<summary class="main-menu__spollers-title">Меню</summary>
+ 							<nav class="main-menu__body">
+ 								<div class="main-menu__list">
+ 									<a href="#" class="main-menu__link _active">Relaunt logan</a>
+ 									<a href="#" class="main-menu__link">Копмлектациии цены</a>
+ 									<a href="#" class="main-menu__link">акции на авто 2024 года</a>
+ 									<a href="#" class="main-menu__link">В наличии</a>
+ 									<a href="#" class="main-menu__link">Расчитать кредит</a>
+ 									<a href="#" class="main-menu__link">Фото</a>
+ 									<a href="#" class="main-menu__link">цена</a>
+ 									<a href="#" class="main-menu__link">Отзывы</a>
+ 								</div>
+ 							</nav>
+ 						</details>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<section data-fullscreen class="steps">
+ 				<div class="steps__container">
+ 					<h2 data-watch class="steps__title">5 этапов покупки по Трейд-ин</h2>
+ 					<div class="steps__items">
+ 						<div class="steps__item item-steps">
+ 							<div class="item-steps__icon">
+ 								<svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M2.79797 12.0461L11.5839 20.8321C11.8556 21.1038 12.2962 21.1038 12.568 20.8321L30.6318 2.76819" stroke="black" stroke-width="5.56677" />
+ 								</svg>
+ 							</div>
+ 							<div class="item-steps__price">98 000 ₽</div>
+ 							<div class="item-steps__subtitle">ГОСПРОГРАММА “ПЕРВЫЙ <br> АВТОМОБИЛЬ”</div>
+ 						</div>
+ 						<div class="steps__item item-steps">
+ 							<div class="item-steps__icon">
+ 								<svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M2.79797 12.0461L11.5839 20.8321C11.8556 21.1038 12.2962 21.1038 12.568 20.8321L30.6318 2.76819" stroke="black" stroke-width="5.56677" />
+ 								</svg>
+ 							</div>
+ 							<div class="item-steps__price">56 000 ₽</div>
+ 							<div class="item-steps__subtitle">ПРОГРАММА <br>TRADE-IN</div>
+ 						</div>
+ 						<div class="steps__item item-steps">
+ 							<div class="item-steps__icon">
+ 								<svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M2.79797 12.0461L11.5839 20.8321C11.8556 21.1038 12.2962 21.1038 12.568 20.8321L30.6318 2.76819" stroke="black" stroke-width="5.56677" />
+ 								</svg>
+ 							</div>
+ 							<div class="item-steps__price">56 000 ₽</div>
+ 							<div class="item-steps__subtitle">ПЕРВОНАЧАЛЬНЫЙ <br>ВЗНОС 20%</div>
+ 						</div>
+ 						<div class="steps__item item-steps">
+ 							<div class="item-steps__icon">
+ 								<svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M2.79797 12.0461L11.5839 20.8321C11.8556 21.1038 12.2962 21.1038 12.568 20.8321L30.6318 2.76819" stroke="black" stroke-width="5.56677" />
+ 								</svg>
+ 							</div>
+ 							<div class="item-steps__price">71 000 ₽</div>
+ 							<div class="item-steps__subtitle">ПРОГРАММА <br>RENAULT FINANCE</div>
+ 						</div>
+ 						<div class="steps__item item-steps">
+ 							<div class="item-steps__icon">
+ 								<svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M2.79797 12.0461L11.5839 20.8321C11.8556 21.1038 12.2962 21.1038 12.568 20.8321L30.6318 2.76819" stroke="black" stroke-width="5.56677" />
+ 								</svg>
+ 							</div>
+ 							<div class="item-steps__price">71 000 ₽</div>
+ 							<div class="item-steps__subtitle">ПРОГРАММА <br>RENAULT FINANCE</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="steps__image-block">
+ 					<div class="steps__svg-ibg">
+ 						<svg viewBox="0 0 538 538" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 							<circle cx="269.145" cy="269.283" r="268.607" fill="#F2C938" />
+ 						</svg>
+ 					</div>
+ 					<div class="steps__image-ibg"><picture><source srcset="img/questions/image-2.webp" type="image/webp"><img src="img/questions/image-2.png" alt="Image"></picture></div>
+ 				</div>
+ 			</section>
+ 			<div data-fullscreen class="questions">
+ 				<div class="questions__container">
+ 					<div class="questions__image-block image-block">
+ 						<div class="image-block__svg-ibg">
+ 							<svg viewBox="0 0 538 538" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<circle cx="269.145" cy="269.283" r="268.607" fill="#F2C938" />
+ 							</svg>
+ 						</div>
+ 						<div class="image-block__image-ibg"><picture><source srcset="img/questions/image.webp" type="image/webp"><img src="img/questions/image.png" alt="Image"></picture></div>
+ 					</div>
+ 					<div class="questions__content content-questions">
+ 						<h2 class="content-questions__title">Остались вопросы?</h2>
+ 						<div class="content-questions__form-block form-block">
+ 							<div class="form-block__text">
+ 								<p>
+ 									Менеджер свяжется с вами в течение 15 минут и сможет ответить на все интересующие вопросы
+ 								</p>
+ 							</div>
+ 							<a href="tel:+7999999999" class="form-block__number">+7 (499) 110-20-47</a>
+ 							<form action="#" class="form-block__form ">
+ 								<input autocomplete="off" type="text" data-error="Ошибка" placeholder="Имя" class="form-block__input">
+ 								<input autocomplete="off" type="tel" data-error="Ошибка" placeholder="+7 (916) 123-45-67" class="form-block__input" data-mask data-required>
+ 								<button type="submit" class="form-block__button">Отправить</button>
+ 								<div class="form-block__checkbox">
+ 									<input id="c_1" data-error="Ошибка" class="form-block__checkbox-input" type="checkbox" value="1" name="form[]">
+ 									<label for="c_1" class="form-block__checkbox-label"><span class="form-block__checkbox-text">Отправляя форму, я соглашаюсь с <a href="#">политикой обработки персональных данных</a></span></label>
+ 								</div>
+ 							</form>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="map">
+ 				<div class="map__wrapper">
+ 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5502.57858659536!2d106.8121316810468!3d-6.190585760189737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f69dbf3077c5%3A0x617afe28c3769a0f!2zS2Vib24gS2FjYW5nLCDQotCw0L3QsNGFLdCQ0LHQsNC90LMsIENlbnRyYWwgSmFrYXJ0YSBDaXR5LCDQlNC20LDQutCw0YDRgtCwLCDQmNC90LTQvtC90LXQt9C40Y8!5e0!3m2!1sru!2sru!4v1718889920523!5m2!1sru!2sru" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 				</div>
+ 			</div>
+ 		</main>
+ 		<footer class="footer">
+ 			<div class="footer__main main-footer">
+ 				<div class="main-footer__container">
+ 					<div class="main-footer__columns">
+ 						<ul class="main-footer__column">
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Sandero Stepway</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Sandero</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Logan Stepway</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Duster</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Kaptur</a></div>
+ 						</ul>
+ 						<ul class="main-footer__column">
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Logan</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Arkana</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Finance</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Кредит</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Новости</a></div>
+ 						</ul>
+ 					</div>
+ 					<div class="main-footer__text">
+ 						Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Цены на сайте представлены с учетом скидки на покупку автомобиля в кредит по государственной программе льготного автокредитования и реализации Вашего автомобиля по системе trade in. Для получения подробной информации о стоимости автомобилей, пожалуйста, обращайтесь к менеджерам по продажам.
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="footer__bottom bottom-footer">
+ 				<div class="bottom-footer__container">
+ 					<div class="bottom-footer__text">ООО «Русфинанс Банк», ген. лицензия ЦБ РФ №1792 от 13.02.2013</div>
+ 				</div>
+ 			</div>
+ 		</footer>
+ 	</div>
+ 	<script src="js/app.min.js?_v=20240716115654"></script>
+ </body>
+
+ </html>

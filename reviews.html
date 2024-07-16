@@ -1,0 +1,994 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+
+ <head>
+ 	<title>Отзывы</title>
+ 	<meta charset="UTF-8">
+ 	<meta name="format-detection" content="telephone=no">
+ 	<style>
+ 		body {
+ 			opacity: 0;
+ 		}
+ 	</style>
+ 	<link rel="stylesheet" href="css/style.min.css?_v=20240716115654">
+ 	<link rel="shortcut icon" href="favicon.ico">
+ 	<!-- <meta name="robots" content="noindex, nofollow"> -->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6-beta.50/inputmask.min.js?_v=20240716115654"></script>
+ </head>
+
+ <body>
+ 	<div class="wrapper">
+ 		<header class="header">
+ 			<div class="header__main">
+ 				<div class="header__up up-header">
+ 					<div class="up-header__container">
+ 						<a href="#" class="up-header__logo"><img src="img/logo.svg" alt="Logo"></a>
+ 						<h2 class="up-header__text">Официальный Дилер в СПб</h2>
+ 						<div class="up-header__location">
+ 							<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<path d="M9.24403 0.655273C6.83002 0.658121 4.51569 1.61835 2.80872 3.32531C1.10175 5.03228 0.141529 7.34661 0.138682 9.76062C0.13579 11.7334 0.780179 13.6526 1.973 15.2238C1.973 15.2238 2.22132 15.5508 2.26188 15.598L9.24403 23.8325L16.2295 15.5938C16.2659 15.55 16.5151 15.2238 16.5151 15.2238L16.5159 15.2214C17.7081 13.6508 18.3522 11.7325 18.3494 9.76062C18.3465 7.34661 17.3863 5.03228 15.6793 3.32531C13.9724 1.61835 11.658 0.658121 9.24403 0.655273ZM9.24403 13.0717C8.58917 13.0717 7.94902 12.8775 7.40452 12.5137C6.86002 12.1498 6.43564 11.6327 6.18503 11.0277C5.93443 10.4227 5.86886 9.75695 5.99662 9.11467C6.12437 8.4724 6.43972 7.88242 6.90278 7.41937C7.36583 6.95631 7.9558 6.64097 8.59808 6.51321C9.24036 6.38545 9.9061 6.45102 10.5111 6.70163C11.1161 6.95223 11.6332 7.37661 11.9971 7.92111C12.3609 8.46561 12.5551 9.10576 12.5551 9.76062C12.554 10.6384 12.2048 11.48 11.5841 12.1007C10.9634 12.7214 10.1218 13.0706 9.24403 13.0717Z" fill="#F2C938" />
+ 							</svg>
+ 							<span>
+ 								г. Санкт-Петербург,<br>
+ 								Московское шоссе, 13к8 <br>
+ 								Ежедневно с 09:00 до 21:00 <br>
+ 							</span>
+ 						</div>
+ 						<a href="tel:+78125078" class="up-header__number">
+ 							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<path d="M10.4586 5.16681C12.474 5.16681 13.3336 6.02644 13.3336 8.04181H15.2503C15.2503 4.95119 13.5492 3.25015 10.4586 3.25015V5.16681ZM13.738 10.383C13.5539 10.2157 13.3119 10.1264 13.0632 10.1341C12.8144 10.1418 12.5784 10.2458 12.405 10.4242L10.1117 12.7827C9.55969 12.6773 8.44994 12.3313 7.3076 11.1919C6.16527 10.0486 5.81931 8.93594 5.71677 8.38777L8.07331 6.09352C8.25196 5.92019 8.35615 5.68414 8.36384 5.43535C8.37153 5.18655 8.28212 4.94452 8.11452 4.76048L4.57348 0.866773C4.40581 0.682156 4.17278 0.570173 3.92388 0.554605C3.67497 0.539037 3.4298 0.621112 3.24044 0.783398L1.16085 2.56686C0.995168 2.73314 0.896276 2.95445 0.882937 3.18881C0.868562 3.4284 0.594479 9.10365 4.99515 13.5062C8.83423 17.3444 13.6431 17.6251 14.9676 17.6251C15.1611 17.6251 15.28 17.6194 15.3116 17.6175C15.5459 17.6044 15.7671 17.505 15.9326 17.3386L17.7151 15.2581C17.8775 15.0688 17.9597 14.8237 17.9444 14.5748C17.929 14.3259 17.8172 14.0928 17.6327 13.925L13.738 10.383Z" fill="#FFD645" />
+ 							</svg>
+ 							<span>+7(812) 507-65-86</span>
+ 						</a>
+ 					</div>
+ 				</div>
+ 				<div class="header__menu menu">
+ 					<div class="menu__container">
+ 						<button type="button" class="menu__icon icon-menu"><span></span></button>
+ 						<nav class="menu__body">
+ 							<ul class="menu__list">
+ 								<div data-spollers="991.98" class="menu__item spolles-menu">
+ 									<details class="spolles-menu__item">
+ 										<summary class="spolles-menu__title">КАТАЛОГ</summary>
+ 										<div class="spolles-menu__body">
+ 										</div>
+ 									</details>
+ 								</div>
+ 								<li class="menu__item"><a href="#" class="menu__link">В НАЛИЧИИ</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">АКЦИИ</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">КРЕДИТ</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">TRADE-IN</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">SIMPLY CLEVER</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">RENAULT ЛЕГКО</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">FINANCE</a></li>
+ 								<li class="menu__item"><a href="#" class="menu__link">TAXI</a></li>
+ 							</ul>
+ 						</nav>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 		</header>
+ 		<main class="page page--reviews">
+ 			<div class="marks-menu">
+ 				<div class="marks-menu__container">
+ 					<ul data-da=".spolles-menu__body, 991.98" class="marks-menu__list">
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">LOGAN</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">LOGAN STEPWAY</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">SANDERO</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">SANDERO STEPWAY</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">DUSTER</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">KAPTUR</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">ARKANA</a></li>
+ 						<li class="marks-menu__item"><a href="#" class="marks-menu__link">DOKKER STEPWAY</a></li>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 			<div class="main-menu">
+ 				<div class="main-menu__container">
+ 					<div data-spollers="479.98" class="main-menu__spollers">
+ 						<details class="main-menu__spollers-item">
+ 							<summary class="main-menu__spollers-title">Меню</summary>
+ 							<nav class="main-menu__body">
+ 								<div class="main-menu__list">
+ 									<a href="#" class="main-menu__link _active">Relaunt logan</a>
+ 									<a href="#" class="main-menu__link">Копмлектациии цены</a>
+ 									<a href="#" class="main-menu__link">акции на авто 2024 года</a>
+ 									<a href="#" class="main-menu__link">В наличии</a>
+ 									<a href="#" class="main-menu__link">Расчитать кредит</a>
+ 									<a href="#" class="main-menu__link">Фото</a>
+ 									<a href="#" class="main-menu__link">цена</a>
+ 									<a href="#" class="main-menu__link">Отзывы</a>
+ 								</div>
+ 							</nav>
+ 						</details>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<section class="reviews-1">
+ 				<div class="reviews-1__container">
+ 					<div class="reviews-1__wrapper">
+ 						<h1 data-watch class="reviews-1__title">Отзывы владельцев Renault LOGAN</h1>
+ 						<div class="reviews-1__body">
+ 							<div class="reviews-1__sliders">
+ 								<div class="reviews-1__slider slider-reviews-1">
+ 									<div class="slider-reviews-1__swiper">
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/4.webp" type="image/webp"><img src="img/reviews-1/4.png" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/3.webp" type="image/webp"><img src="img/reviews-1/3.png" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/1.webp" type="image/webp"><img src="img/reviews-1/1.jpg" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/2.webp" type="image/webp"><img src="img/reviews-1/2.png" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/4.webp" type="image/webp"><img src="img/reviews-1/4.png" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/3.webp" type="image/webp"><img src="img/reviews-1/3.png" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/1.webp" type="image/webp"><img src="img/reviews-1/1.jpg" alt="Машина"></picture>
+ 										</div>
+ 										<div class="slider-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/2.webp" type="image/webp"><img src="img/reviews-1/2.png" alt="Машина"></picture>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="reviews-1__thumbs thumbs-reviews-1">
+ 									<div class="thumbs-reviews-1__swiper">
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/4.webp" type="image/webp"><img src="img/reviews-1/4.png"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/3.webp" type="image/webp"><img src="img/reviews-1/3.png"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/1.webp" type="image/webp"><img src="img/reviews-1/1.jpg"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/2.webp" type="image/webp"><img src="img/reviews-1/2.png"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/4.webp" type="image/webp"><img src="img/reviews-1/4.png"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/3.webp" type="image/webp"><img src="img/reviews-1/3.png"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/1.webp" type="image/webp"><img src="img/reviews-1/1.jpg"></picture>
+ 										</div>
+ 										<div class="thumbs-reviews-1__slide-ibg">
+ 											<picture><source srcset="img/reviews-1/2.webp" type="image/webp"><img src="img/reviews-1/2.png"></picture>
+ 										</div>
+ 									</div>
+ 									<button class="thumbs-reviews-1__arrow thumbs-reviews-1__arrow--left">
+ 										<svg width="13" height="103" viewBox="0 0 13 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 											<rect x="3.98438" y="50.1316" width="8.201" height="2.05932" transform="rotate(45 3.98438 50.1316)" fill="#EFEFEF" />
+ 											<rect x="2.50879" y="51.1881" width="8.20824" height="2.05208" transform="rotate(-45 2.50879 51.1881)" fill="#EFEFEF" />
+ 										</svg>
+ 									</button>
+ 									<button class="thumbs-reviews-1__arrow thumbs-reviews-1__arrow--right">
+ 										<svg width="13" height="103" viewBox="0 0 13 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 											<rect x="4.90137" y="47.0865" width="8.20824" height="2.05208" transform="rotate(45 4.90137 47.0865)" fill="#EFEFEF" />
+ 											<rect x="3.43457" y="57.2797" width="8.20824" height="2.05208" transform="rotate(-45 3.43457 57.2797)" fill="#EFEFEF" />
+ 										</svg>
+ 									</button>
+ 								</div>
+ 							</div>
+ 							<div class="reviews-1__content content-reviews-1">
+ 								<h3 class="content-reviews-1__title">Основные характеристики</h3>
+ 								<div class="content-reviews-1__info">
+ 									<div class="content-reviews-1__row">
+ 										<div class="content-reviews-1__name">Мощность:</div>
+ 										<div class="content-reviews-1__param">113 л/с</div>
+ 									</div>
+ 									<div class="content-reviews-1__row">
+ 										<div class="content-reviews-1__name">Расход на 100 км:</div>
+ 										<div class="content-reviews-1__param">5.6-8.5 л</div>
+ 									</div>
+ 									<div class="content-reviews-1__row">
+ 										<div class="content-reviews-1__name">Разгон до 100 км/ч:</div>
+ 										<div class="content-reviews-1__param">10.7 c</div>
+ 									</div>
+ 									<div class="content-reviews-1__row">
+ 										<div class="content-reviews-1__name">Максимальная скорость:</div>
+ 										<div class="content-reviews-1__param">177 км,ч</div>
+ 									</div>
+ 								</div>
+ 								<a href="#" class="content-reviews-1__link">
+ 									<span>Комплектации и цены</span>
+ 									<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 										<path d="M1.15296 0.888987C1.3948 0.647227 1.72275 0.511414 2.0647 0.511414C2.40666 0.511414 2.73461 0.647227 2.97644 0.888987L8.13479 6.04734C8.37655 6.28917 8.51237 6.61713 8.51237 6.95908C8.51237 7.30103 8.37655 7.62898 8.13479 7.87082L2.97644 13.0292C2.73322 13.2641 2.40747 13.3941 2.06934 13.3911C1.73122 13.3882 1.40777 13.2526 1.16867 13.0135C0.929573 12.7744 0.793949 12.4509 0.791011 12.1128C0.788072 11.7747 0.918056 11.4489 1.15296 11.2057L5.39958 6.95908L1.15296 2.71246C0.911204 2.47063 0.775391 2.14268 0.775391 1.80073C0.775391 1.45877 0.911204 1.13082 1.15296 0.888987Z" fill="#130F00" />
+ 									</svg>
+ 								</a>
+ 								<a href="#" class="content-reviews-1__button review-button review-button--big">Оставить отзыв</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</section>
+ 			<section class="statistics">
+ 				<div class="statistics__container">
+ 					<h2 data-watch class="statistics__title">Статистика</h2>
+ 					<div class="statistics__body">
+ 						<div class="statistics__items">
+ 							<div class="statistics__item item-statistics">
+ 								<h3 class="item-statistics__title">Комфорт: <span class="item-statistics__value">4.2</span></h3>
+ 								<div class="item-statistics__reting">
+ 									<div class="item-statistics__rating-bar"></div>
+ 								</div>
+ 							</div>
+ 							<div class="statistics__item item-statistics">
+ 								<h3 class="item-statistics__title">Комфорт: <span class="item-statistics__value">3.9</span></h3>
+ 								<div class="item-statistics__reting">
+ 									<div class="item-statistics__rating-bar"></div>
+ 								</div>
+ 							</div>
+ 							<div class="statistics__item item-statistics">
+ 								<h3 class="item-statistics__title">Комфорт: <span class="item-statistics__value">3.1</span></h3>
+ 								<div class="item-statistics__reting">
+ 									<div class="item-statistics__rating-bar"></div>
+ 								</div>
+ 							</div>
+ 							<div class="statistics__item item-statistics">
+ 								<h3 class="item-statistics__title">Комфорт: <span class="item-statistics__value">5</span></h3>
+ 								<div class="item-statistics__reting">
+ 									<div class="item-statistics__rating-bar"></div>
+ 								</div>
+ 							</div>
+ 							<div class="statistics__item item-statistics">
+ 								<h3 class="item-statistics__title">Комфорт: <span class="item-statistics__value">4.2</span></h3>
+ 								<div class="item-statistics__reting">
+ 									<div class="item-statistics__rating-bar"></div>
+ 								</div>
+ 							</div>
+ 							<div class="statistics__item item-statistics">
+ 								<h3 class="item-statistics__title">Комфорт: <span class="item-statistics__value">3.3</span></h3>
+ 								<div class="item-statistics__reting">
+ 									<div class="item-statistics__rating-bar"></div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 						<div class="statistics__result result-statistics">
+ 							<div class="result-statistics__reting">
+ 								<svg viewBox="0 0 300 300">
+ 									<circle class="result-statistics__circle result-statistics__circle--1" cx="150" cy="150" r="125"></circle>
+ 									<circle class="result-statistics__circle result-statistics__circle--2" cx="150" cy="150" r="125"></circle>
+ 								</svg>
+ 								<div class="result-statistics__value">3.52</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</section>
+ 			<section class="users-reviews">
+ 				<div class="users-reviews__container">
+ 					<h2 data-watch class="users-reviews__title">Отзывы владельцев Рено Логан</h2>
+ 					<div class="users-reviews__reviews-2 reviews-2">
+ 						<div class="reviews-2__body">
+ 							<div class="reviews-2__content">
+ 								<div class="reviews-2__top">
+ 									<div class="reviews-2__image-ibg"><picture><source srcset="img/reviews-1/3.webp" type="image/webp"><img src="img/reviews-1/3.png" alt="Машина"></picture></div>
+ 									<div data-da=".reviews-2__bottom--1, 1000" class="reviews-2__text-block reviews-2__text-block--1">
+ 										<h3 class="reviews-2__title">Характеристики</h3>
+ 										<div class="reviews-2__text">
+ 											Год выпуска: 2018;
+ 											Тип топлива: Бензин;
+ 											Тип трансмисии: МКПП;
+ 											Привод: Передний;
+ 											Тип кузова: Седан;<br>
+ 											Период эксплуатации: 5 месяцев
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="reviews-2__name-block">
+ 									<h2 class="reviews-2__name">Ирина</h2>
+ 									<div class="reviews-2__text">
+ 										Купили с мужем Логана как второй авто в семью исключительно для меня, чтобы возить детей в школу, на секции, заехать по
+ 										пути в магазин. Соответственно, мне важна была простота, комфорт и практичность, а не молниеносный разгон, дизайн и
+ 										мегакрутая медийная система. Вот выбор и пал на Логан. Она мне нравится по многим параметрам: в первую очередь
+ 										недорогая, во-вторых экономичная (в смешанном режиме не более 7,5 л на 100 км). Мне хватает мощности в 82 л.с. и чтобы
+ 										совершить обгон, и чтобы просто передвигаться неспешно по городу. Авто небольшой, мне удобно парковаться, но и детям
+ 										сзади места предостаточно. Багажник тоже просторный, там все сумки детские и покупки всегда умещаются. Печка реально
+ 										жаркая, этой зимой мы детей одевали полегче специально.
+ 									</div>
+ 								</div>
+ 								<div class="reviews-2__bottom reviews-2__bottom--1">
+ 									<div class="reviews-2__text-block reviews-2__text-block--2">
+ 										<h3 class="reviews-2__title">Достоинства</h3>
+ 										<div class="reviews-2__text">
+ 											Дорожный просвет около 15 см, даже по зимним сугробам езжу смело, бордюров и ям не боимся)
+ 										</div>
+ 									</div>
+ 									<div class="reviews-2__text-block reviews-2__text-block--2">
+ 										<h3 class="reviews-2__title">Недостатки</h3>
+ 										<div class="reviews-2__text">
+ 											Не очень длинные передачи, но когда дошел до 5, то уже едешь как с круизом долгое время.
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<a href="#" class="reviews-2__button review-button">Оставить отзыв</a>
+ 							</div>
+ 							<div class="reviews-2__right right-reviews-2">
+ 								<div class="right-reviews-2__top">
+ 									<h3 class="right-reviews-2__title">Общая оценка:</h3>
+ 									<div class="right-reviews-2__rating rating">
+ 										<div class="rating__body">
+ 											<div class="rating__active"></div>
+ 											<div class="rating__items">
+ 												<input type="radio" class="rating__item" value="1" name="rating">
+ 												<input type="radio" class="rating__item" value="2" name="rating">
+ 												<input type="radio" class="rating__item" value="3" name="rating">
+ 												<input type="radio" class=" rating__item" value="4" name="rating">
+ 												<input type="radio" class="rating__item" value="5" name="rating">
+ 											</div>
+ 										</div>
+ 										<div class="rating__value rating__value--hidden">4</div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Внешний вид</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">4</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Двигатель</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">5</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Ходовые качества</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">1</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Салон и комфорт</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">1</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Безопасность</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">3</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Эксплуатация</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">4</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Надежность</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">3</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Впечатления</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">4</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="users-reviews__reviews-2 reviews-2">
+ 						<div class="reviews-2__body">
+ 							<div class="reviews-2__content">
+ 								<div class="reviews-2__top">
+ 									<div class="reviews-2__image-ibg"><picture><source srcset="img/reviews-1/2.webp" type="image/webp"><img src="img/reviews-1/2.png" alt="Машина"></picture></div>
+ 									<div data-da=".reviews-2__bottom--2, 1000" class="reviews-2__text-block reviews-2__text-block--1">
+ 										<h3 class="reviews-2__title">Характеристики</h3>
+ 										<div class="reviews-2__text">
+ 											Год выпуска: 2018;
+ 											Тип топлива: Бензин;
+ 											Тип трансмисии: АКПП;
+ 											Привод: Передний;
+ 											Тип кузова: Седан;
+ 											Период эксплуатации: 6 месяцев
+
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="reviews-2__name-block">
+ 									<h2 class="reviews-2__name">Александр</h2>
+ 									<div class="reviews-2__text">
+ 										Реношка в комплектации 1.6 AT Active. Сразу отмечу, она не скоростная и не для резких рисковых обгонов. Эта модель для
+ 										ребят, ведущих размеренный образ жизни, наслаждающихся моментом. Мы с супругой неспешно ездим на ней на дачу,
+ 										перевозим все, что нужно, благо багажник вместительный. Модель на АКПП, которая работает отлично, не пинается. Расход
+ 										около 9,8 л. Сильная сторона Логанов – клиренс и подвеска. Подвеска безупречно отрабатывает неровности, легко
+ 										переезжает полицейских, ухабчики на деревенской дороге, никаких проблем.
+ 									</div>
+ 								</div>
+ 								<div class="reviews-2__bottom reviews-2__bottom--2">
+ 									<div class="reviews-2__text-block reviews-2__text-block--2">
+ 										<h3 class="reviews-2__title">Достоинства</h3>
+ 										<div class="reviews-2__text">
+ 											Уютный салон, практичная обивка, пластик средней жесткости, не скрипит. Кресло водителя регулируется. Хорошая штатная
+ 											магнитола, управляется звук кнопками на руле.
+ 										</div>
+ 									</div>
+ 									<div class="reviews-2__text-block reviews-2__text-block--2">
+ 										<h3 class="reviews-2__title">Недостатки</h3>
+ 										<div class="reviews-2__text">
+ 											Не нашел
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<a href="#" class="reviews-2__button review-button">Оставить отзыв</a>
+ 							</div>
+ 							<div class="reviews-2__right right-reviews-2">
+ 								<div class="right-reviews-2__top">
+ 									<h3 class="right-reviews-2__title">Общая оценка:</h3>
+ 									<div class="right-reviews-2__rating rating">
+ 										<div class="rating__body">
+ 											<div class="rating__active"></div>
+ 											<div class="rating__items">
+ 												<input type="radio" class="rating__item" value="1" name="rating">
+ 												<input type="radio" class="rating__item" value="2" name="rating">
+ 												<input type="radio" class="rating__item" value="3" name="rating">
+ 												<input type="radio" class=" rating__item" value="4" name="rating">
+ 												<input type="radio" class="rating__item" value="5" name="rating">
+ 											</div>
+ 										</div>
+ 										<div class="rating__value rating__value--hidden">4</div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Внешний вид</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">4</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Двигатель</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">2</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Ходовые качества</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">5</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Салон и комфорт</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">5</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Безопасность</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">4</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Эксплуатация</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">5</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Надежность</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">2</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 								<div class="right-reviews-2__review">
+ 									<div class="right-reviews-2__block">
+ 										<h4 class="right-reviews-2__name">Впечатления</h4>
+ 										<div class="right-reviews-2__num"><span class="right-reviews-2__value">4</span>/5</div>
+ 									</div>
+ 									<div class="right-reviews-2__line">
+ 										<div class="right-reviews-2__bar"></div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</section>
+ 			<section class="my-review">
+ 				<div class="my-review__container">
+ 					<h2 data-watch class="my-review__title">Оставить свой отзыв</h2>
+ 					<div class="my-review__body">
+ 						<form action class="my-review__form form-my-review">
+ 							<div class="form-my-review__main">
+ 								<div class="form-my-review__blocks">
+ 									<div class="form-my-review__block">
+ 										<label for="name" class="form-my-review__label">Имя</label>
+ 										<input autocomplete="off" type="text" id="name" name="form[]" data-error="Ошибка" placeholder="Введите свое имя" class="form-my-review__input">
+ 									</div>
+ 									<div class="form-my-review__block">
+ 										<label for="title" class="form-my-review__label">Заголовок</label>
+ 										<input autocomplete="off" type="text" id="title" name="form[]" data-error="Ошибка" placeholder="Введите заголовок" class="form-my-review__input">
+ 									</div>
+ 									<div class="form-my-review__block">
+ 										<label for="review" class="form-my-review__label">Отзыв</label>
+ 										<textarea id="review" name="form[]" data-error="Ошибка" placeholder="Начните писать текст.." class="form-my-review__aria"></textarea>
+ 									</div>
+ 									<div class="form-my-review__bottom">
+ 										<div class="form-my-review__block">
+ 											<label for="advantages" class="form-my-review__label">Достоинства</label>
+ 											<textarea id="advantages" name="form[]" data-error="Ошибка" placeholder="Начните писать текст.." class="form-my-review__aria"></textarea>
+ 										</div>
+ 										<div class="form-my-review__block">
+ 											<label for="flaws" class="form-my-review__label">Недостатки</label>
+ 											<textarea id="flaws" name="form[]" data-error="Ошибка" placeholder="Начните писать текст.." class="form-my-review__aria"></textarea>
+ 										</div>
+ 									</div>
+ 								</div>
+ 								<div class="form-my-review__right right-my-review">
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Внешний вид</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Двигатель</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Ходовые качества</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Салон и комфорт</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Безопасность</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Эксплуатация</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 									<div class="right-my-review__row">
+ 										<div class="right-my-review__name">Надежность</div>
+ 										<div class="right-my-review__rating rating rating_set">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">0</div>
+ 										</div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 							<div class="form-my-review__result">
+ 								<button type="submit" class="form-my-review__button review-button">Оставить отзыв</button>
+ 								<div class="form-my-review__file file-my-review">
+ 									<input type="file" id="file" class="file-my-review__input" name="form[]" accept="image/png, image/jpeg">
+ 									<label for="file" class="file-my-review__button">
+ 										<svg class="file-my-review__icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 											<g clip-path="url(#clip0_2173_554)">
+ 												<path d="M7.64438 14.5653C7.01635 15.1765 6.1729 15.5159 5.29654 15.5101C4.42017 15.5042 3.58135 15.1535 2.96157 14.5339C2.34178 13.9143 1.99087 13.0756 1.98475 12.1992C1.97863 11.3229 2.31779 10.4793 2.92887 9.85111L5.75513 7.02287L4.8168 6.08521L1.9912 8.91345C1.11738 9.78771 0.626642 10.9733 0.626953 12.2094C0.627264 13.4455 1.1186 14.6308 1.99286 15.5046C2.86712 16.3784 4.05271 16.8692 5.28879 16.8689C6.52488 16.8685 7.71021 16.3772 8.58404 15.503L11.4103 12.6767L10.4726 11.739L7.64438 14.5653Z" fill="#374957" />
+ 												<path d="M15.1779 2.31839C14.7464 1.88391 14.2329 1.53939 13.6673 1.30479C13.1017 1.07019 12.4951 0.950164 11.8828 0.951676V0.951676C11.2708 0.950051 10.6645 1.06977 10.099 1.3039C9.53355 1.53803 9.0201 1.88194 8.58836 2.31573L5.75879 5.14266L6.69645 6.08098L9.5247 3.25473C9.83342 2.94415 10.2007 2.6979 10.6052 2.53023C11.0098 2.36256 11.4436 2.27681 11.8815 2.27794V2.27794C12.5408 2.27815 13.1852 2.47384 13.7334 2.84027C14.2815 3.20669 14.7087 3.7274 14.9609 4.33657C15.2132 4.94574 15.2791 5.61601 15.1505 6.26267C15.0219 6.90932 14.7044 7.50332 14.2382 7.96958L11.412 10.7958L12.3503 11.7342L15.1766 8.90923C16.0493 8.03463 16.5395 6.84962 16.5397 5.61408C16.54 4.37855 16.0502 3.19334 15.1779 2.31839V2.31839Z" fill="#374957" />
+ 												<path d="M10.4708 6.08531L5.75977 10.7964L6.69757 11.7342L11.4087 7.02312L10.4708 6.08531Z" fill="#374957" />
+ 											</g>
+ 											<defs>
+ 												<clippath id="clip0_2173_554">
+ 													<rect width="15.9151" height="15.9151" fill="white" transform="translate(0.626953 0.951416)" />
+ 												</clippath>
+ 											</defs>
+ 										</svg>
+ 										<span class="file-my-review__text">Прикрепить</span>
+ 									</label>
+ 								</div>
+ 							</div>
+ 						</form>
+ 					</div>
+ 				</div>
+ 			</section>
+ 			<section class="marks-review">
+ 				<div class="marks-review__container">
+ 					<div class="marks-review__top">
+ 						<h2 data-watch class="marks-review__title">Отзывы на другие модели</h2>
+ 						<div class="marks-review__navigation">
+ 							<button type="button" class="marks-review__button marks-review__button--left">
+ 								<svg viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M12.7595 21.3362L3.00879 11.211L12.7595 1.08594" stroke="#4C5865" stroke-width="3" />
+ 								</svg>
+ 							</button>
+ 							<button type="button" class="marks-review__button marks-review__button--right">
+ 								<svg width="14" height="23" viewBox="0 0 14 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 									<path d="M2.00977 21.3362L11.7605 11.211L2.00977 1.08594" stroke="#4C5865" stroke-width="3" />
+ 								</svg>
+ 							</button>
+ 						</div>
+ 					</div>
+ 					<div class="marks-review__slider slider-review">
+ 						<div class="slider-review__swiper">
+ 							<div class="slider-review__slide">
+ 								<div class="slider-review__top">
+ 									<div>
+ 										<h3 class="slider-review__name">Александр</h3>
+ 										<div class="slider-review__mark">Relaunt Sandero</div>
+ 									</div>
+ 									<div>
+ 										<div class="slider-review__rating rating">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">4</div>
+ 										</div>
+ 										<div class="slider-review__subtitle">Оценка</div>
+ 									</div>
+ 								</div>
+ 								<div class="slider-review__text">
+ 									<p>
+ 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+ 									</p>
+ 								</div>
+ 								<a href="#" class="slider-review__button">Смотреть полностью</a>
+ 							</div>
+ 							<div class="slider-review__slide">
+ 								<div class="slider-review__top">
+ 									<div>
+ 										<h3 class="slider-review__name">Александр</h3>
+ 										<div class="slider-review__mark">Relaunt Sandero</div>
+ 									</div>
+ 									<div>
+ 										<div class="slider-review__rating rating">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">4</div>
+ 										</div>
+ 										<div class="slider-review__subtitle">Оценка</div>
+ 									</div>
+ 								</div>
+ 								<div class="slider-review__text">
+ 									<p>
+ 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+ 									</p>
+ 								</div>
+ 								<a href="#" class="slider-review__button">Смотреть полностью</a>
+ 							</div>
+ 							<div class="slider-review__slide">
+ 								<div class="slider-review__top">
+ 									<div>
+ 										<h3 class="slider-review__name">Александр</h3>
+ 										<div class="slider-review__mark">Relaunt Sandero</div>
+ 									</div>
+ 									<div>
+ 										<div class="slider-review__rating rating">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">4</div>
+ 										</div>
+ 										<div class="slider-review__subtitle">Оценка</div>
+ 									</div>
+ 								</div>
+ 								<div class="slider-review__text">
+ 									<p>
+ 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+ 									</p>
+ 								</div>
+ 								<a href="#" class="slider-review__button">Смотреть полностью</a>
+ 							</div>
+ 							<div class="slider-review__slide">
+ 								<div class="slider-review__top">
+ 									<div>
+ 										<h3 class="slider-review__name">Александр</h3>
+ 										<div class="slider-review__mark">Relaunt Sandero</div>
+ 									</div>
+ 									<div>
+ 										<div class="slider-review__rating rating">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">4</div>
+ 										</div>
+ 										<div class="slider-review__subtitle">Оценка</div>
+ 									</div>
+ 								</div>
+ 								<div class="slider-review__text">
+ 									<p>
+ 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+ 									</p>
+ 								</div>
+ 								<a href="#" class="slider-review__button">Смотреть полностью</a>
+ 							</div>
+ 							<div class="slider-review__slide">
+ 								<div class="slider-review__top">
+ 									<div>
+ 										<h3 class="slider-review__name">Александр</h3>
+ 										<div class="slider-review__mark">Relaunt Sandero</div>
+ 									</div>
+ 									<div>
+ 										<div class="slider-review__rating rating">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">4</div>
+ 										</div>
+ 										<div class="slider-review__subtitle">Оценка</div>
+ 									</div>
+ 								</div>
+ 								<div class="slider-review__text">
+ 									<p>
+ 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+ 									</p>
+ 								</div>
+ 								<a href="#" class="slider-review__button">Смотреть полностью</a>
+ 							</div>
+ 							<div class="slider-review__slide">
+ 								<div class="slider-review__top">
+ 									<div>
+ 										<h3 class="slider-review__name">Александр</h3>
+ 										<div class="slider-review__mark">Relaunt Sandero</div>
+ 									</div>
+ 									<div>
+ 										<div class="slider-review__rating rating">
+ 											<div class="rating__body">
+ 												<div class="rating__active"></div>
+ 												<div class="rating__items">
+ 													<input type="radio" class="rating__item" value="1" name="rating">
+ 													<input type="radio" class="rating__item" value="2" name="rating">
+ 													<input type="radio" class="rating__item" value="3" name="rating">
+ 													<input type="radio" class=" rating__item" value="4" name="rating">
+ 													<input type="radio" class="rating__item" value="5" name="rating">
+ 												</div>
+ 											</div>
+ 											<div class="rating__value">4</div>
+ 										</div>
+ 										<div class="slider-review__subtitle">Оценка</div>
+ 									</div>
+ 								</div>
+ 								<div class="slider-review__text">
+ 									<p>
+ 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. . Donec quam felis,Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+ 									</p>
+ 								</div>
+ 								<a href="#" class="slider-review__button">Смотреть полностью</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</section>
+ 			<div data-fullscreen class="questions">
+ 				<div class="questions__container">
+ 					<div class="questions__image-block image-block">
+ 						<div class="image-block__svg-ibg">
+ 							<svg viewBox="0 0 538 538" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<circle cx="269.145" cy="269.283" r="268.607" fill="#F2C938" />
+ 							</svg>
+ 						</div>
+ 						<div class="image-block__image-ibg"><picture><source srcset="img/questions/image.webp" type="image/webp"><img src="img/questions/image.png" alt="Image"></picture></div>
+ 					</div>
+ 					<div class="questions__content content-questions">
+ 						<h2 class="content-questions__title">Остались вопросы?</h2>
+ 						<div class="content-questions__form-block form-block">
+ 							<div class="form-block__text">
+ 								<p>
+ 									Менеджер свяжется с вами в течение 15 минут и сможет ответить на все интересующие вопросы
+ 								</p>
+ 							</div>
+ 							<a href="tel:+7999999999" class="form-block__number">+7 (499) 110-20-47</a>
+ 							<form action="#" class="form-block__form ">
+ 								<input autocomplete="off" type="text" data-error="Ошибка" placeholder="Имя" class="form-block__input">
+ 								<input autocomplete="off" type="tel" data-error="Ошибка" placeholder="+7 (916) 123-45-67" class="form-block__input" data-mask data-required>
+ 								<button type="submit" class="form-block__button">Отправить</button>
+ 								<div class="form-block__checkbox">
+ 									<input id="c_1" data-error="Ошибка" class="form-block__checkbox-input" type="checkbox" value="1" name="form[]">
+ 									<label for="c_1" class="form-block__checkbox-label"><span class="form-block__checkbox-text">Отправляя форму, я соглашаюсь с <a href="#">политикой обработки персональных данных</a></span></label>
+ 								</div>
+ 							</form>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="map">
+ 				<div class="map__wrapper">
+ 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5502.57858659536!2d106.8121316810468!3d-6.190585760189737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f69dbf3077c5%3A0x617afe28c3769a0f!2zS2Vib24gS2FjYW5nLCDQotCw0L3QsNGFLdCQ0LHQsNC90LMsIENlbnRyYWwgSmFrYXJ0YSBDaXR5LCDQlNC20LDQutCw0YDRgtCwLCDQmNC90LTQvtC90LXQt9C40Y8!5e0!3m2!1sru!2sru!4v1718889920523!5m2!1sru!2sru" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 				</div>
+ 			</div>
+ 		</main>
+ 		<footer class="footer">
+ 			<div class="footer__main main-footer">
+ 				<div class="main-footer__container">
+ 					<div class="main-footer__columns">
+ 						<ul class="main-footer__column">
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Sandero Stepway</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Sandero</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Logan Stepway</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Duster</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Kaptur</a></div>
+ 						</ul>
+ 						<ul class="main-footer__column">
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Logan</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Arkana</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Finance</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Кредит</a></div>
+ 							<div class="main-footer__item"><a href="#" class="main-footer__link">Новости</a></div>
+ 						</ul>
+ 					</div>
+ 					<div class="main-footer__text">
+ 						Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Цены на сайте представлены с учетом скидки на покупку автомобиля в кредит по государственной программе льготного автокредитования и реализации Вашего автомобиля по системе trade in. Для получения подробной информации о стоимости автомобилей, пожалуйста, обращайтесь к менеджерам по продажам.
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="footer__bottom bottom-footer">
+ 				<div class="bottom-footer__container">
+ 					<div class="bottom-footer__text">ООО «Русфинанс Банк», ген. лицензия ЦБ РФ №1792 от 13.02.2013</div>
+ 				</div>
+ 			</div>
+ 		</footer>
+ 	</div>
+ 	<script src="js/app.min.js?_v=20240716115654"></script>
+ </body>
+
+ </html>
